@@ -1,0 +1,8 @@
+@import 'mixin';
+@import 'variables';
+
+.login-page {
+  .main-content {
+    padding-bottom:  (30em/$fs);;
+  }
+}

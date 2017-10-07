@@ -1,0 +1,38 @@
+@import '../mixin';
+@import '../variables';
+
+
+
+[class*="-center"] {
+  margin: 0 auto;
+}
+
+[class*="-main"],
+[class*="-aside"]{
+  width: (620em/$fs);
+}
+
+[class*="-aside"] {
+  width: auto;
+  margin: 0 (10em/$fs);
+}
+
+.tactic {
+  .main-wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  .tactic-item {
+    float:none;
+    margin: (10em/$fs) 0 0 0;
+
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+}
+
+.work-us {
+  @inclue hide();
+}

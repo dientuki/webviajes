@@ -1,0 +1,89 @@
+@import '../mixin';
+@import '../variables';
+
+[class*="-left"],
+[class*="-right"]{
+  float:none;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  padding: 0 (30em/$fs);
+  width: auto;
+
+  > [class*="block-"] {
+    margin-top: (20em/$fs);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+#header {
+  .logo {
+    left: (30em/$fs);
+  }
+
+  #primary-navigation,
+  .contact-info {
+    right: (30em/$fs);
+  }
+}
+
+.destinations-list {
+  .destinations-place {
+    width: (460%/939*100);
+    margin: (19%/939*100) 0 0 (19%/939*100);
+    padding-bottom: (52%/834*100);
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+}
+
+.tactic {
+
+  .tactic-item {
+    margin: 0;
+
+    &:nth-child(2) {
+      float: right;
+    }
+
+    &:last-child {
+      margin: 1em 0 0 (289%/879*100);
+    }
+  }
+}
+
+.main-slider {
+  .Wallop-item {
+    position: relative;
+    margin: 1em auto 0 auto;
+    visibility: visible;
+    width: (622em/$fs);
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  [class*="Wallop-Arrow"] {
+    @include hide();
+  }
+}
+
+.gob-medals {
+  .gob-medals-container {
+    padding-right: (141em/$fs);
+  }
+}

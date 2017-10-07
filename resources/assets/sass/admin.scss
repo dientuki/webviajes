@@ -1,0 +1,155 @@
+$fs:16;
+
+/* ios 8 */
+
+.checkbox-user {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+input[type="checkbox"].ios8-switch {
+  position: absolute;
+  margin: 5px 0 0 10px;
+  outline: none;
+
+  + label {
+    position: relative;
+    padding: 0 0 0 32px;
+    line-height: 1.3em;
+    cursor: pointer;
+    font-size: 1rem !important;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 25px;
+      /* x*5 */
+      height: 15px;
+      /* x*3 */
+      border-radius: 10px;
+      /* x*2 */
+      background: #fff;
+      border: 1px solid #d9d9d9;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0px;
+      top: 0px;
+      width: 15px;
+      /* x*3 */
+      height: 15px;
+      /* x*3 */
+      border-radius: 10px;
+      /* x*2 */
+      background: #fff;
+      border: 1px solid #d9d9d9;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    &:hover:after {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &:checked + label {
+    &:after {
+      margin-left: 10px;
+    }
+    &:before {
+      background: #55D069;
+    }
+  }
+}
+
+
+.main-wrapper {
+  width: (940em/16);
+  margin: 0 auto;
+}
+
+.main-content {
+  padding-bottom:  (30em/$fs);
+
+  &:before {
+    background: none;
+    visibility: hidden;
+    display: none;
+  }
+
+  > .main-wrapper {
+    padding:  (20em/$fs) (25em/$fs);
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  }
+}
+
+table {
+  $tfs: 16;
+  width: 100%;
+  font-size: #{$tfs/$fs}em;
+
+  tbody {
+    td {
+      height: (33em/$tfs);
+      border-top: solid (1em/$tfs) #8cc8eb;
+    }
+
+    tr:first-child {
+      td {
+        border: none;
+      }
+    }
+  }
+
+  a,
+  .email {
+    color: #265686;
+  }
+
+  .email {
+    width: (200em/$tfs);
+  }
+
+  .column-action {
+    text-align: right;
+  }
+}
+
+
+#header {
+  height: (70em/$fs);
+
+  .logo {
+    $h:(56em/$fs);
+    height: $h;
+    width: (76em/$fs);
+    margin-top: ($h/-2);
+
+    &:before {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+#primary-navigation {
+  $h: (45em/$fs);
+  top:50%;
+  bottom:auto;
+  margin-top: ($h/-2);
+}
+
+#footer-old {
+  padding: (10em/$fs) 0;
+}
+
+#footer {
+  padding: (10em/$fs) 0;
+}
