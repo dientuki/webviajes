@@ -75,7 +75,7 @@ form {
 @import 'alerts';
 
 .afterload {
-  background: url(../images/logo-atyca.svg) no-repeat center center #336699;
+  background: url(../images/logo-wdv.svg) no-repeat center center #336699;
   background-size:60% 40%;
   text-indent: -999em;
 }
@@ -254,23 +254,10 @@ form {
     height: (111em/$fs);
     width: (152em/$fs);
     left: 0;
-    background: url(../images/logo-atyca.svg) no-repeat center center;
+    background: url(../images/logo-wdv.svg) no-repeat center center;
     top:50%;
     margin-top: (55em/-16);
     text-indent: -9999em;
-
-    &:before {
-      $tfs: 11;
-      content:"Operador Mayorista";
-      position: absolute;
-      font-size: #{$tfs/$fs}em;
-      line-height: 1em;
-      color:#8cc8eb;
-      text-indent: 0;
-      bottom: (11em/$tfs);
-      left: (96em/$tfs);
-      width: (110em/$tfs);
-    }
   }
 }
 

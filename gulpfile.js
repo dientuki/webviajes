@@ -14,8 +14,8 @@ const elixir = require('laravel-elixir');
 
 elixir(mix => {
 
-  mix.copy('node_modules/axios/dist/axios.js', 'resources/assets/js/modules/axios.js');
-  mix.copy('node_modules/type-ahead/type-ahead.js', 'resources/assets/js/modules/type-ahead.js');
+  //mix.copy('node_modules/axios/dist/axios.js', 'resources/assets/js/modules/axios.js');
+  //mix.copy('node_modules/type-ahead/type-ahead.js', 'resources/assets/js/modules/type-ahead.js');
 
   mix.sass(['normalize.scss',
             'layout.scss',
