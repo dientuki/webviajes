@@ -2,7 +2,7 @@
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta name="_token" content="{!! csrf_token() !!}"/>
 <title>
-  Atyca Operadora
+  Webdeviajes.club
 </title>
 <meta name="description">
 <link rel="canonical">
